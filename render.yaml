@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: vortex-telegram-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python vortexBot.py
+    autoDeploy: true
